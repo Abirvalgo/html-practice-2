@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header__logo"></div>
+				<nav class="header__menu">
+					<a href="#">Home</a>
+					<a href="#blog">Blog</a>
+					<a href="#features">Features</a>
+					<a href="#">Pricing</a>
+					<a href="#">Documentation</a>
+				</nav>
+				<nav class="header__social">
+					<a class="header__social-pic" href=""><img class="social-pic-filter"
+							src="./assets/images/fb-small.svg"></a>
+					<a class="header__social-pic" href=""><img class="social-pic-filter"
+							src="./assets/images/tg-small.svg"></a>
+					<a class="header__social-pic" href=""><img class="social-pic-filter"
+							src="./assets/images/tw-small.svg"></a>
+					<a class="header__social-pic" href=""><img class="social-pic-filter"
+							src="./assets/images/med-small.svg"></a>
+				</nav>
+				<a class="header__get-started-btn" href="#get-started"><span>Get started</span></a>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="hero-image__main">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<section class="hero-image" id="blog">
+						<div class="container">
+							<div class="hero-text">
+								<p>PLAN YOUR LIFE</p>
+								<p>Increase your <span>productivity</span></p>
+								<p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem
+									an,
+									insolens
+									gubergren similique est cu. Et vel modus congue vituperata.</p>
+								<a class="hero-text__btn" href="youtube.com"></a>
+							</div>
+							<div class="hero-image__vector-bg"></div>
+							<div class="hero-image__vector-line"></div>
+						</div>
+					</section>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="hero-image">
+						<div class="hero-text">
+							<p>PLAN YOUR LIFE</p>
+							<p>Increase your <span>productivity</span></p>
+							<p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+								insolens
+								gubergren similique est cu. Et vel modus congue vituperata.</p>
+							<a class="hero-text__btn" href="youtube.com"></a>
+						</div>
+						<div class="hero-image__vector-bg"></div>
+						<div class="hero-image__vector-line"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				pagination: {
+					el: ".swiper-pagination",
+				},
+			});
+		</script>
+	</section>
+
+
+	<section class="customers">
+		<div class="container">
+			<div class="customers__wrapper">
+				<a href="#"><img src="./assets/images/customers/bitbucket.svg"></a>
+				<a href="#"><img src="./assets/images/customers/applewatch.svg"></a>
+				<a href="#"><img src="./assets/images/customers/facebook.svg"></a>
+				<a href="#"><img src="./assets/images/customers/atlassian.svg"></a>
+				<a href="#"><img src="./assets/images/customers/audi.svg"></a>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="plan-manage">
+		<div class="container">
+			<div class="plan-manage__text">
+				<p>DESKTOP AND MOBILE APP</p>
+				<p>Plan and manage</p>
+				<p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
+					gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis
+					mollis oporteat. Eum an expetenda consequat.</p>
+				<div class="plan-manage__text-icons">
+					<a href="#"><img src="./assets/images/plan-manage/view_video.png"></a>
+					<a href="#"><img src="./assets/images/plan-manage/see_feat.svg"></a>
+				</div>
+			</div>
+			<div class="plan-manage-illustration"></div>
+		</div>
+	</section>
+
+
+	<section class="features" #>
+		<div class="features__content" id="features">
+			<div class="features-clouds"></div>
+			<div class="features__content-title">
+				<p>ABOUT US</p>
+				<p>Read about our app</p>
+			</div>
+			<nav class="features__content-features">
+				<div class="features-style">
+					<a href="#"><img src="./assets/images/features/overview.svg"></a>
+					<p> Overview</p>
+					<p> Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
+				</div>
+				<div class="features-style">
+					<a href="#"><img src="./assets/images/features/files.svg"></a>
+					<p> Files</p>
+					<p> No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
+				</div>
+				<div class="features-style">
+					<a href="#"><img src="./assets/images/features/chats.svg"></a>
+					<p> Meeting chats</p>
+					<p> Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
+				</div>
+				<div class="features-style">
+					<a href="#"><img src="./assets/images/features/events.svg"></a>
+					<p> Save events</p>
+					<p> Nisl idque mel ea, nominati voluptatum.</p>
+				</div>
+			</nav>
+			<div class="features__content-buttons">
+				<a class="features__read-more-btn" href="#read-more"><span>Read More</span></a>
+				<p>OR</p>
+				<a class="features__get-started-btn" href="#get-started"><span>Get started</span></a>
+			</div>
+		</div>
+	</section>
+	<section class="stats">
+		<div class="container">
+			<div class="stats__wrapper">
+				<div class="stats__customers">
+					<img src="./assets/images/stats/stats-cust.svg">
+					<p>89%</p>
+					<p>Customers who have increased their productivity</p>
+				</div>
+				<div class="stats__users">
+					<img src="./assets/images/stats/stats-users.svg">
+					<p>3123</p>
+					<p>Users who have used our application</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	</main>
+	</div>
+	</div>
+</body>
+
+</html>
