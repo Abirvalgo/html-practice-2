@@ -60,30 +60,26 @@
 }
 
 .header__get-started-btn{
-	display: flex;
-	text-decoration: none;
-	align-items: center;
-	justify-content: center;
+	border: none;
 	width: 113px;
 	height: 43px;
 	background: #D2E1FF;
-	border-radius: 2px;
+	border-radius: 5px;
 	margin-left: 44px;
 	margin-right: 0;
-}
-
-.header__get-started-btn>span{
-	display: block;
 	font-family: 'Quicksand';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 13px;
 	line-height: 16px;
-	color: #697CA6;
-}
-.header__get-started-btn>span:hover{
-	cursor: pointer;
 	color: #3A79FF;
+	transition: all 0.3s;
+}
+
+.header__get-started-btn:hover{
+	cursor: pointer;
+	background: #FFD7D7;
+	color: #D43F3F;
 }
 
 .header__social{
@@ -91,8 +87,13 @@
     margin-left: 361px;
     align-items: center;
 }
+
 .header__social-pic:not(:last-child){
 	margin-right: 35px;
+}
+
+.social-pic-filter{
+	transition: all 0.2s;
 }
 
 .social-pic-filter:hover{
@@ -202,11 +203,14 @@
 }
 .customers__wrapper>a{
 	display: block;
+	transition: all 0.3s;
 }
 
 .customers__wrapper>a:hover{
 	filter: invert(48%) sepia(70%) saturate(2515%) hue-rotate(204deg) brightness(97%) contrast(86%);
 }
+
+/* Start Plan-manage section*/
 
 .plan-manage{
 	background-color: #F5F8FF;
@@ -263,8 +267,25 @@
 	display: flex;
 	flex-direction: row;
 }
-.plan-manage__text-icons>a{
-	display: block;
+.plan-manage__text-icons>button{
+	cursor: pointer;
+	width: 130px;
+	height: 43px;
+	border: 1px solid #D1D1E4;
+	color: #ADB4D2;
+	background-color: rgba(76, 133, 255, 0);
+	font-family: "Quicksand";
+	font-size: 13px;
+    line-height: 16px;
+	transition: all 0.3s;
+}
+.plan-manage__text-icons>button:nth-child(1)::after{
+	content: "▶";
+}
+
+.plan-manage__text-icons>button:hover{
+	color: #FFFFFF;
+	background-color: rgba(76, 133, 255, 1);
 }
 
 .plan-manage-illustration{
@@ -278,10 +299,8 @@
 	bottom: 450px;
 }
 
-.features-clouds{
-	max-width: 1201px;
-	max-height: 573px;
-}
+	/* start Features Section */
+
 .features__content{
 	margin: 0;
 	margin-left: auto;
@@ -329,6 +348,8 @@
 	display: flex;
 }
 
+/* 4 блока: Overview, Files, meetings chats, save events*/
+
 .features-style{
 	display: flex;
 	margin-right: 67px;
@@ -372,6 +393,7 @@
 	margin-right: 0px;
 }
 
+/* Кнопки Read more, Get Started */
 
 .features__get-started-btn{
 	display: flex;
@@ -428,7 +450,6 @@
 	color: #D43F3F;
 }
 
-
 .features__read-more-btn{
 	cursor: pointer;
 	border: none;
@@ -440,6 +461,7 @@
 	color: #3A79FF;
 	margin-right: 48px;
 }
+
 .features__read-more-btn:hover{
 	background: #FFD7D7;
 	color: #D43F3F;
@@ -453,6 +475,8 @@
 	background-size: cover;
 	z-index: 1;
 }
+
+	/* Start Stats Section */
 
 .stats__wrapper{
 	display: flex;
@@ -476,7 +500,7 @@
 	margin-right: 90px;
 	margin-top: 67px;
 }
-.stats__customers :nth-child(2){
+.stats__customers :nth-child(2),.stats__customers :nth-child(3){
 	display: block;
 	margin: 0;
 	font-family: 'Quicksand';
@@ -491,18 +515,10 @@
 	
 }
 .stats__customers :nth-child(3){
-	display: block;
-	margin: 0;
-	font-family: 'Quicksand';
-	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 23px;
-	text-align: right;
-	letter-spacing: 0.03em;
-	color: #FFFFFF;
 	width: 260px;
-	margin-right: 90px;
 	margin-bottom: 66px;
 }
 
@@ -531,7 +547,7 @@
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 83px;
-	text-align: right;
+	text-align: left;
 	letter-spacing: 0.03em;
 	color: #5E80FF;
 	margin-left: 90px;
@@ -545,7 +561,7 @@
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 23px;
-	text-align: right;
+	text-align: left;
 	letter-spacing: 0.03em;
 	color: #5E80FF;
 	width: 260px;
